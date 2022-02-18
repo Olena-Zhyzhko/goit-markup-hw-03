@@ -229,23 +229,35 @@ ul {
   flex-basis: calc(100% / 4 - 30px);
   outline: 1px solid cornflowerblue;
 }
-/* 
 
-
-.featurs-item
-.featurs-item:last-child) {
-  margin-right: 0px;
-} */
-
-.featurs-item:last-child {
-  margin-right: 0;
-}
 .featurs-text {
   color: var(--primery-text-color);
 }
 /* Виды деятельности */
 .activity {
+  padding-bottom: 94px;
 }
+
+.activity > .title {
+  margin-bottom: 50px;
+}
+
+.activity-list {
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+  outline: 1px solid red;
+}
+
+.activity-list > .activity-item {
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.activity-pic {
+  display: block;
+}
+
 /* Команда */
 .title {
   font-size: 36px;
