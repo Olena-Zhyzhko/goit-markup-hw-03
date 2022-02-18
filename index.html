@@ -4,74 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio_hw2</title>
+    <title>WebStudio_hw3</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     
 </head>
 <body>
     <!-- Хедер-->
     <header class="header">
-        <!-- Логотип -->
-        <a class="logo link" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
-        <nav class="nav">
-            <ul class="nav-list list">
-                <li class="nav-item">
-                    <a class="nav-link link current" href="">Студия</a>
+        <div class="container header-flex-container">
+            <!-- Логотип -->
+            <a class="logo link" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
+            <nav class="nav">
+                <ul class="nav-list list">
+                    <li class="nav-item">
+                        <a class="nav-link link current" href="">Студия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="header-contacts-list list">
+                <li class="header-contacts-item">
+                    <a class="header-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link" href="">Контакты</a>
+                <li class="header-contacts-item">
+                    <a class="header-contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
-        </nav>
-        <ul class="header-contacts-list list">
-            <li class="header-contacts-item">
-                <a class="header-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="header-contacts-item">
-                <a class="header-contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>
+        </div>
+        
 
     </header>
     <main>
         <!-- Герой -->
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button class="hero-btn" type="button">Заказать услугу</button>
+            <div class="container">
+                <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
+                <button class="hero-btn" type="button">Заказать услугу</button>
+            </div>
+            
         </section>
         <!-- Преимущества -->
-        <section class="featurs">
-            <h2 class="hidden" hidden>Преимущества</h2>
-            <ul class="featurs-list list" >
-                <li class="featurs-item">
-                    <h3 class="featurs-title">Внимание к деталям</h3>
-                    <p class="featurs-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li class="featurs-item">
-                    <h3 class="featurs-title">Пунктуальность</h3>
-                    <p class="featurs-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li class="featurs-item">
-                    <h3 class="featurs-title">Планирование</h3>
-                    <p class="featurs-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li class="featurs-item">
-                    <h3 class="featurs-title">Современные технологии</h3>
-                    <p class="featurs-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
+        <section class="featurs container">
+            <!-- <div class="featurs-flex-cont"> -->
+                <h2 class="hidden" hidden>Преимущества</h2>
+                <ul class="featurs-list list" >
+                    <li class="featurs-item">
+                        <h3 class="featurs-title">Внимание к деталям</h3>
+                        <p class="featurs-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li class="featurs-item">
+                        <h3 class="featurs-title">Пунктуальность</h3>
+                        <p class="featurs-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
+                    <li class="featurs-item">
+                        <h3 class="featurs-title">Планирование</h3>
+                        <p class="featurs-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li class="featurs-item">
+                        <h3 class="featurs-title">Современные технологии</h3>
+                        <p class="featurs-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
+            <!-- </div> -->
+            
 
         </section>
         <!-- Виды деятельности -->
-        <section class="activity">
+        <section class="activity container">
             <h2 class="title">Чем мы занимаемся</h2>
             <ul class="activity-list list">
                 <li class="activity-item">
@@ -86,7 +97,7 @@
             </ul>
         </section>
         <!-- Наша команда -->
-        <section class="team">
+        <section class="team container">
             <h2 class="title">Наша команда</h2>
             <ul class="team-list list">
                 <li class="team-list-item">
@@ -113,7 +124,7 @@
         </section>
     </main>
     <!-- Футер -->
-    <footer class="footer">
+    <footer class="footer container">
         <a class="logo link" href="./index.html"><span class="logo-accent">Web</span><span class="logo-light">Studio</span> </a>
         <address class="address">
             г. Киев, пр-т Леси Украинки, 26
