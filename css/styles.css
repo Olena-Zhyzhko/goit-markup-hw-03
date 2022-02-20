@@ -87,13 +87,9 @@ ul {
 
 .header {
   background-color: var(--light-color);
-  border-bottom: 1600px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
-.header > .container {
-  height: 80px;
-}
 .header-flex-container {
   display: flex;
   align-items: center;
@@ -138,8 +134,9 @@ ul {
 }
 
 .nav-item > a {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--secondary-text-color);
 }
@@ -155,8 +152,8 @@ ul {
 }
 
 .header-contacts-link {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--primery-text-color);
 }
@@ -213,6 +210,19 @@ ul {
 
 /* Преимущества */
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .featurs-title {
   margin-bottom: 10px;
 
@@ -244,7 +254,6 @@ ul {
 
 .activity-list {
   display: flex;
-  align-items: center;
   margin-left: -30px;
 }
 
@@ -278,9 +287,14 @@ ul {
   margin-left: -30px;
 }
 
+.team-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-list > .team-list-item {
   margin-left: 30px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   flex-basis: calc(100% / 4 - 30px);
 
   background-color: var(--light-color);
@@ -292,7 +306,7 @@ ul {
 
 .team-list-photo {
   display: block;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .team-list-name {
@@ -314,26 +328,13 @@ ul {
 /* Футер */
 .footer {
   background-color: var(--dark-bg-color);
-  /* padding-top: 60px; */
-}
-
-.footer > .container {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.logo {
 }
 
 .logo-light {
   color: var(--light-color);
 }
-
-/* .footer .address {
-  color: var(--light-color);
-  font-style: normal;
-  text-decoration: none;
-} */
 
 address.address {
   margin-top: 20px;
@@ -342,8 +343,8 @@ address.address {
   text-decoration: none;
 }
 
-.address-map {
-  margin-bottom: 9px;
+.footer-contacts-list {
+  margin-top: 9px;
 }
 
 .footer-contacts-item:not(:last-child) {
